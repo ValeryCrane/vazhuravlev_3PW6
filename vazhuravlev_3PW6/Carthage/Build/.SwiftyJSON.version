@@ -1,0 +1,60 @@
+{
+  "Mac" : [
+    {
+      "swiftToolchainVersion" : "5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)",
+      "hash" : "528e2070513095ff2f0521d558c3d26a5bafe7251b56a3d691f2145738991ae4",
+      "name" : "SwiftyJSON",
+      "container" : "SwiftyJSON.xcframework",
+      "identifier" : "macos-x86_64"
+    }
+  ],
+  "watchOS" : [
+    {
+      "swiftToolchainVersion" : "5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)",
+      "hash" : "7d6688903a33967c34eb320329d2ef7eee0509a810127c3941e1827455bbd0fa",
+      "name" : "SwiftyJSON",
+      "container" : "SwiftyJSON.xcframework",
+      "identifier" : "watchos-arm64_i386_x86_64-simulator"
+    },
+    {
+      "swiftToolchainVersion" : "5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)",
+      "hash" : "23af346f07b3a48eeb6ff74d6acdede4c32599a7ef3ec524889c9c26277df04a",
+      "name" : "SwiftyJSON",
+      "container" : "SwiftyJSON.xcframework",
+      "identifier" : "watchos-arm64_32_armv7k"
+    }
+  ],
+  "tvOS" : [
+    {
+      "swiftToolchainVersion" : "5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)",
+      "hash" : "d9fea4f4143fd1a0cc53eefc116f8a54a73c04519b270df1be7a8f22fd90dd7a",
+      "name" : "SwiftyJSON",
+      "container" : "SwiftyJSON.xcframework",
+      "identifier" : "tvos-arm64_x86_64-simulator"
+    },
+    {
+      "swiftToolchainVersion" : "5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)",
+      "hash" : "c2e32b20a6119be10b4c8a4c13a14bd8ff08d14d3a42990f85d1e1fc7c21111f",
+      "name" : "SwiftyJSON",
+      "container" : "SwiftyJSON.xcframework",
+      "identifier" : "tvos-arm64"
+    }
+  ],
+  "commitish" : "4.3.0",
+  "iOS" : [
+    {
+      "swiftToolchainVersion" : "5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)",
+      "hash" : "c26ad1e6ac950631bba9c025c67bc184e6d31b491af9db67bc8d4a3e520c14da",
+      "name" : "SwiftyJSON",
+      "container" : "SwiftyJSON.xcframework",
+      "identifier" : "ios-arm64_i386_x86_64-simulator"
+    },
+    {
+      "swiftToolchainVersion" : "5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)",
+      "hash" : "6899507ee7bb06f855865eafb6c6208e30fc394cef60268bf5c936f7b56d7f92",
+      "name" : "SwiftyJSON",
+      "container" : "SwiftyJSON.xcframework",
+      "identifier" : "ios-arm64_armv7"
+    }
+  ]
+}

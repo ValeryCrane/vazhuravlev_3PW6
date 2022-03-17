@@ -9,9 +9,11 @@ import UIKit
 import MyLogger1
 import MyLogger2
 import MyLogger3
+import SwiftyJSON
 
 class ViewController: UIViewController {
 
+    // MARK: - ViewController's life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -19,6 +21,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    // MARK: - setup functions
     private func setupButtons() {
         let stack = UIStackView()
         self.view.addSubview(stack)
@@ -58,6 +61,7 @@ class ViewController: UIViewController {
         return button
     }
     
+    // MARK: - actions
     @objc private func frameworkAction() {
         MyLogger1.log("Hello, world")
     }
@@ -71,7 +75,11 @@ class ViewController: UIViewController {
     }
     
     @objc private func carthageAction() {
-        
+        let json = JSON(["title":"SwiftyJSON", "date": "\(Date())"])
+        if let title = json["title"].string,
+           let date = json["date"].string {
+            print("\(title) from carthage (\(date)): Hello, world!")
+        }
     }
 
 

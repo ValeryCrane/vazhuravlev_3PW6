@@ -15,6 +15,8 @@
 		489771F427E2B588008C3412 /* MyLogger1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 489771F027E2B576008C3412 /* MyLogger1.framework */; };
 		489771F527E2B588008C3412 /* MyLogger1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 489771F027E2B576008C3412 /* MyLogger1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		489771FC27E2B6B6008C3412 /* MyLogger2 in Frameworks */ = {isa = PBXBuildFile; productRef = 489771FB27E2B6B6008C3412 /* MyLogger2 */; };
+		4897720E27E2C626008C3412 /* SwiftyJSON.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4897720A27E2C37A008C3412 /* SwiftyJSON.xcframework */; };
+		4897720F27E2C626008C3412 /* SwiftyJSON.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4897720A27E2C37A008C3412 /* SwiftyJSON.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FAC861592AC171726CBA0FDE /* Pods_vazhuravlev_3PW6.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5A8942D241CB0059F9C7E8A /* Pods_vazhuravlev_3PW6.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +38,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				489771F527E2B588008C3412 /* MyLogger1.framework in Embed Frameworks */,
+				4897720F27E2C626008C3412 /* SwiftyJSON.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,6 +55,8 @@
 		489771CA27E2B415008C3412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		489771EB27E2B576008C3412 /* MyLogger1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MyLogger1.xcodeproj; path = ../MyLogger1/MyLogger1.xcodeproj; sourceTree = "<group>"; };
 		489771F827E2B66B008C3412 /* MyLogger2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MyLogger2; sourceTree = "<group>"; };
+		4897720527E2C128008C3412 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		4897720A27E2C37A008C3412 /* SwiftyJSON.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwiftyJSON.xcframework; path = Carthage/Build/SwiftyJSON.xcframework; sourceTree = "<group>"; };
 		55532E91E23A4ABAFDF505BF /* Pods-vazhuravlev_3PW6.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vazhuravlev_3PW6.debug.xcconfig"; path = "Target Support Files/Pods-vazhuravlev_3PW6/Pods-vazhuravlev_3PW6.debug.xcconfig"; sourceTree = "<group>"; };
 		C5A8942D241CB0059F9C7E8A /* Pods_vazhuravlev_3PW6.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vazhuravlev_3PW6.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC9FF9B26A142665539DDB5 /* Pods-vazhuravlev_3PW6.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vazhuravlev_3PW6.release.xcconfig"; path = "Target Support Files/Pods-vazhuravlev_3PW6/Pods-vazhuravlev_3PW6.release.xcconfig"; sourceTree = "<group>"; };
@@ -63,6 +68,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				489771F427E2B588008C3412 /* MyLogger1.framework in Frameworks */,
+				4897720E27E2C626008C3412 /* SwiftyJSON.xcframework in Frameworks */,
 				489771FC27E2B6B6008C3412 /* MyLogger2 in Frameworks */,
 				FAC861592AC171726CBA0FDE /* Pods_vazhuravlev_3PW6.framework in Frameworks */,
 			);
@@ -115,6 +121,8 @@
 		489771F327E2B588008C3412 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4897720A27E2C37A008C3412 /* SwiftyJSON.xcframework */,
+				4897720527E2C128008C3412 /* Alamofire.framework */,
 				C5A8942D241CB0059F9C7E8A /* Pods_vazhuravlev_3PW6.framework */,
 			);
 			name = Frameworks;
@@ -134,7 +142,6 @@
 				55532E91E23A4ABAFDF505BF /* Pods-vazhuravlev_3PW6.debug.xcconfig */,
 				ECC9FF9B26A142665539DDB5 /* Pods-vazhuravlev_3PW6.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -415,6 +422,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Y3W67AZM6;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = vazhuravlev_3PW6/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -435,6 +443,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Y3W67AZM6;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = vazhuravlev_3PW6/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
