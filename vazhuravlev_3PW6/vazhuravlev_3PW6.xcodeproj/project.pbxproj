@@ -12,7 +12,33 @@
 		489771C127E2B414008C3412 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489771C027E2B414008C3412 /* ViewController.swift */; };
 		489771C627E2B415008C3412 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 489771C527E2B415008C3412 /* Assets.xcassets */; };
 		489771C927E2B415008C3412 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 489771C727E2B415008C3412 /* LaunchScreen.storyboard */; };
+		489771F427E2B588008C3412 /* MyLogger1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 489771F027E2B576008C3412 /* MyLogger1.framework */; };
+		489771F527E2B588008C3412 /* MyLogger1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 489771F027E2B576008C3412 /* MyLogger1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		489771EF27E2B576008C3412 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 489771EB27E2B576008C3412 /* MyLogger1.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 489771DC27E2B4CC008C3412;
+			remoteInfo = MyLogger1;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		489771F627E2B588008C3412 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				489771F527E2B588008C3412 /* MyLogger1.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		489771B927E2B414008C3412 /* vazhuravlev_3PW6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vazhuravlev_3PW6.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +48,7 @@
 		489771C527E2B415008C3412 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		489771C827E2B415008C3412 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		489771CA27E2B415008C3412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		489771EB27E2B576008C3412 /* MyLogger1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MyLogger1.xcodeproj; path = ../MyLogger1/MyLogger1.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				489771F427E2B588008C3412 /* MyLogger1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +66,10 @@
 		489771B027E2B414008C3412 = {
 			isa = PBXGroup;
 			children = (
+				489771EB27E2B576008C3412 /* MyLogger1.xcodeproj */,
 				489771BB27E2B414008C3412 /* vazhuravlev_3PW6 */,
 				489771BA27E2B414008C3412 /* Products */,
+				489771F327E2B588008C3412 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +94,21 @@
 			path = vazhuravlev_3PW6;
 			sourceTree = "<group>";
 		};
+		489771EC27E2B576008C3412 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				489771F027E2B576008C3412 /* MyLogger1.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		489771F327E2B588008C3412 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +119,7 @@
 				489771B527E2B414008C3412 /* Sources */,
 				489771B627E2B414008C3412 /* Frameworks */,
 				489771B727E2B414008C3412 /* Resources */,
+				489771F627E2B588008C3412 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -109,12 +155,28 @@
 			mainGroup = 489771B027E2B414008C3412;
 			productRefGroup = 489771BA27E2B414008C3412 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 489771EC27E2B576008C3412 /* Products */;
+					ProjectRef = 489771EB27E2B576008C3412 /* MyLogger1.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				489771B827E2B414008C3412 /* vazhuravlev_3PW6 */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		489771F027E2B576008C3412 /* MyLogger1.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MyLogger1.framework;
+			remoteRef = 489771EF27E2B576008C3412 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		489771B727E2B414008C3412 /* Resources */ = {

@@ -57,7 +57,7 @@ class ViewController: UIViewController {
     }
     
     @objc private func frameworkAction() {
-
+        MyLogger1.log("Hello, world")
     }
     
     @objc private func swiftPackageAction() {
