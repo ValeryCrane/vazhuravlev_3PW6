@@ -15,6 +15,7 @@
 		489771F427E2B588008C3412 /* MyLogger1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 489771F027E2B576008C3412 /* MyLogger1.framework */; };
 		489771F527E2B588008C3412 /* MyLogger1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 489771F027E2B576008C3412 /* MyLogger1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		489771FC27E2B6B6008C3412 /* MyLogger2 in Frameworks */ = {isa = PBXBuildFile; productRef = 489771FB27E2B6B6008C3412 /* MyLogger2 */; };
+		FAC861592AC171726CBA0FDE /* Pods_vazhuravlev_3PW6.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5A8942D241CB0059F9C7E8A /* Pods_vazhuravlev_3PW6.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,9 @@
 		489771CA27E2B415008C3412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		489771EB27E2B576008C3412 /* MyLogger1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MyLogger1.xcodeproj; path = ../MyLogger1/MyLogger1.xcodeproj; sourceTree = "<group>"; };
 		489771F827E2B66B008C3412 /* MyLogger2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MyLogger2; sourceTree = "<group>"; };
+		55532E91E23A4ABAFDF505BF /* Pods-vazhuravlev_3PW6.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vazhuravlev_3PW6.debug.xcconfig"; path = "Target Support Files/Pods-vazhuravlev_3PW6/Pods-vazhuravlev_3PW6.debug.xcconfig"; sourceTree = "<group>"; };
+		C5A8942D241CB0059F9C7E8A /* Pods_vazhuravlev_3PW6.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vazhuravlev_3PW6.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECC9FF9B26A142665539DDB5 /* Pods-vazhuravlev_3PW6.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vazhuravlev_3PW6.release.xcconfig"; path = "Target Support Files/Pods-vazhuravlev_3PW6/Pods-vazhuravlev_3PW6.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			files = (
 				489771F427E2B588008C3412 /* MyLogger1.framework in Frameworks */,
 				489771FC27E2B6B6008C3412 /* MyLogger2 in Frameworks */,
+				FAC861592AC171726CBA0FDE /* Pods_vazhuravlev_3PW6.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,7 @@
 				489771BB27E2B414008C3412 /* vazhuravlev_3PW6 */,
 				489771BA27E2B414008C3412 /* Products */,
 				489771F327E2B588008C3412 /* Frameworks */,
+				A52B72A0D024766223653DCF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +115,7 @@
 		489771F327E2B588008C3412 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C5A8942D241CB0059F9C7E8A /* Pods_vazhuravlev_3PW6.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -121,6 +128,16 @@
 			path = Packages;
 			sourceTree = "<group>";
 		};
+		A52B72A0D024766223653DCF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55532E91E23A4ABAFDF505BF /* Pods-vazhuravlev_3PW6.debug.xcconfig */,
+				ECC9FF9B26A142665539DDB5 /* Pods-vazhuravlev_3PW6.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,10 +145,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 489771CD27E2B415008C3412 /* Build configuration list for PBXNativeTarget "vazhuravlev_3PW6" */;
 			buildPhases = (
+				3D4F2C54B99283A82B51F7B2 /* [CP] Check Pods Manifest.lock */,
 				489771B527E2B414008C3412 /* Sources */,
 				489771B627E2B414008C3412 /* Frameworks */,
 				489771B727E2B414008C3412 /* Resources */,
 				489771F627E2B588008C3412 /* Embed Frameworks */,
+				9D72A61511128161A7D8A359 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -204,6 +223,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D4F2C54B99283A82B51F7B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-vazhuravlev_3PW6-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D72A61511128161A7D8A359 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vazhuravlev_3PW6/Pods-vazhuravlev_3PW6-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vazhuravlev_3PW6/Pods-vazhuravlev_3PW6-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vazhuravlev_3PW6/Pods-vazhuravlev_3PW6-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		489771B527E2B414008C3412 /* Sources */ = {
@@ -348,6 +409,7 @@
 		};
 		489771CE27E2B415008C3412 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55532E91E23A4ABAFDF505BF /* Pods-vazhuravlev_3PW6.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -367,6 +429,7 @@
 		};
 		489771CF27E2B415008C3412 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECC9FF9B26A142665539DDB5 /* Pods-vazhuravlev_3PW6.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -1,0 +1,6 @@
+framework module Pods_vazhuravlev_3PW6 {
+  umbrella header "Pods-vazhuravlev_3PW6-umbrella.h"
+
+  export *
+  module * { export * }
+}

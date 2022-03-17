@@ -8,6 +8,7 @@
 import UIKit
 import MyLogger1
 import MyLogger2
+import MyLogger3
 
 class ViewController: UIViewController {
 
@@ -66,7 +67,7 @@ class ViewController: UIViewController {
     }
     
     @objc private func podAction() {
-        
+        MyLogger3.log("Hello, world")
     }
     
     @objc private func carthageAction() {
